@@ -1,42 +1,86 @@
-body {
+.title {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-size: 80px;
+	color: black;
+	padding-top: 100px;
+	font-weight:300;
+	text-decoration: none;
 }
 
-.header{
-	width: 100%;
-	height: 200px;
-	background: url('../images/marble.jpg');
-	letter-spacing: 15px;
+span {
+	font-family: 'Calligraffitti', sans-serif;
+	font-size: 80px;
+}
+
+.home{
+	text-align: center;
+	padding-top: 70px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    letter-spacing: 15px;
 }
 
 li a {
-	text-decoration: none; 
-	color: white;
-	font-size: 20px; 
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif; 
+	font-weight: 400;
 }
 
-li a:hover{
-	color: purple;
+li a:hover {
+    color: purple;
 }
 
-.nav{
-	position: fixed;
-	top:0px;
-  	right:0px;
-	left:0px;
-	z-index:999;
+.nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
 }
 
 .nav li {
-	display: inline-block;
-	width: 24%;
-	text-align: center;
-	padding: 10px 0;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .nav ul {
-	background-color: black;
+    background-color: black;
+}
+
+.mini_nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+.mini_nav li {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mini_nav ul {
+    background-color: black;
 }
 
 .sticky {
@@ -48,136 +92,286 @@ li a:hover{
     border-top: 0;
 }
 
-
 .header_title {
-	font-size: 100px;
-	text-align: center;
-	top: 20%;
-	position: relative;
+    font-size: 100px;
+    text-align: center;
+    top: 20%;
+    position: relative;
 }
 
 .box1 {
-	width: 100%;
-	background-color: #bfbfbf;
-
+    width: 100%;
+    background-color: #bfbfbf;
 }
 
-.footer{
-	background-color: black;
-	width: 100%;
-	height: 100px;
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
 }
 
-.footer p{
-	font-size: 13px;
-	text-align: center;
-	color: white;
-	padding-top: 40px;
-	clear: both;
+.footer p {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    clear: both;
 }
 
-section{
-	border-bottom: black 3px solid; 
-	margin: 0 auto;
-	width: 90%;
-}
-
-section img {
-	background-size: contain;
-	height: 500px;
-	width: 100%;
-}
-
-.article_health .image {
-	width: 50%;
-	display: inline-block;
-	float: left;
-}
-
-.article_lifestyle .image {
-	width: 50%;
-	display: inline-block;
-	float: right;
+section {
+    border-bottom: black 3px solid;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .article_lifestyle, .article_health, .article_beauty {
-	overflow: auto;
-	padding: 20px 0;
+    overflow: auto;
+    padding: 20px 0;
 }
 
-.article_health a, .article_health img .article_beauty img{
-	display: inline-block;
+.article_health a, .article_health img .article_beauty img {
+    display: inline-block;
 }
 
-.article_health img {
-	background-size: cover;
-	background: url('../images/health.jpg');
-	display: block;
+.article_health .image {
+    background: url('../images/health.jpg');
+    display: block;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    width: 50%;
 }
 
-.article_health a{
-	font-size: 80px;
-	text-decoration: none;
-	font-weight: 900;	
-	width: 50%;
-	color: black;
+.article_lifestyle .image {
+    background: url('../images/lifestyle.jpg');
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: right;
+    width: 50%;
+}
+
+.article_beauty .image {
+    background: url('../images/beauty.jpg');
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    width: 50%;
+}
+
+.article_health a {
+    font-size: 80px;
+    text-decoration: none;
+    font-weight: 900;
+    width: 50%;
+    color: black;
+    padding-top: 20%;
 }
 
 .article_health a:hover {
-	color: purple;
+    color: purple;
 }
 
-.article_lifestyle img {
-	background: url('../images/lifestyle.jpg');
-	background-size: cover;
-	display: block;
-    margin: 0 auto;
-}
-
-.article_lifestyle a{
-	font-size: 80px;
-	text-decoration: none;
-	font-weight: 900;	
-	width: 50%;
-	color: black;
-	display: inline-block;
+.article_lifestyle a {
+    font-size: 80px;
+    text-decoration: none;
+    font-weight: 900;
+    width: 50%;
+    color: black;
+    display: inline-block;
+    padding-top: 20%;
 }
 
 .article_lifestyle a:hover {
-	color: purple;
+    color: purple;
 }
 
-.article_beauty img{
-	background-size: cover;
-	background: url('../images/beauty.jpg');
-	display: block;
-	background-repeat: no-repeat;
-	height: 300px;
-	width: 500px;
-	float: left;
-	margin-top: 15px;
-}
-
-.article_beauty a{
-	font-size: 80px;
-	text-decoration: none;
-	font-weight: 900;	
-	width: 50%;
-	color: black;
+.article_beauty a {
+    font-size: 80px;
+    text-decoration: none;
+    font-weight: 900;
+    width: 50%;
+    color: black;
+    display: inline-block;
+    padding-top: 20%;
 }
 
 .article_beauty a:hover {
-	color: purple;
+    color: purple;
 }
 
-.article_beauty{
-	border-bottom: white;
+.article_beauty {
+    border-bottom: white;
 }
 
 h2 {
-	font-size: 40px; 
-	color: black;
-	font-weight: 300; 
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: 300;
+}
+/*form code*/
+
+form {
+	padding: 20px;
 }
 
+.form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form label {
+	display: block;
+}
+
+.btn.submit {
+	background-color: black;
+	font-size: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+}
+
+input[type=submit]:hover {
+    background-color: purple;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    border-color: black;
+    resize: none;
+}
+
+/*hamburger helper*/
+
+.image {
+    min-height: 500px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .title {
+    	font-size: 40px;
+    	padding-top: 0;
+    }
+    span{
+    	font-size: 40px;
+    }
+
+    .home {
+        padding-top: 100px;
+    }
+    header {
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .article_lifestyle .image, .article_beauty .image, .article_health .image {
+        width: 100%;
+        float: none;
+    }
+    .article_lifestyle a, .article_beauty a, .article_health a {
+        font-size: 40px;
+        width: 100%;
+        padding-top: 0;
+        margin-left: 5px;
+    }
+    .image {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .nav {
+        display: none;
+    }
+    header {
+        position: absolute;
+    }
+    .nav.shown ul {
+        right: 0;
+        left: 0;
+        position: absolute;
+        top: 50px;
+    }
+    .nav.shown li {
+        display: block;
+    }
+
+    .mini_nav {
+    	display: none;
+    }
+
+    .mini_nav.shown ul {
+        right: 0;
+        left: 0;
+        position: absolute;
+        top: 50px;
+    }
+    .mini_nav.shown li {
+        display: block;
+    }
+    .hamburger {
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        z-index: 90;
+        display: block;
+    }
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+    }
+    .hamburger_menu {
+        width: 200px;
+        background-color: green;
+        position: absolute;
+        z-index: 1000;
+        top: 20px;
+        left: -150px;
+    }
+}

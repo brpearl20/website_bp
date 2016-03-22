@@ -3,6 +3,7 @@
 <head>
         <link type= "text/css" rel="stylesheet" href="css/reset.css"/>
         <link type= "text/css" rel="stylesheet" href="css/style.css"/>
+         <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,900' rel='stylesheet' type='text/css'>
         <meta name="brittany nyc" content="Relaxed"/>
         <meta name="nyc, lifestyle,health, beauty, fitness, fashion, fun" content="HTML,CSS,"/>
@@ -12,23 +13,28 @@
 </head>
 <body>
 
-<h2> Ask Me A Question</h2>
-
+<div class="home">
+    <a class= "title" href="index.html">
+        Brittany Pearl<span> NYC</span>
+    </a>
 </div>
+
+<h2> Ask Me A Question</h2>
+	
 <div class="nav">
         <ul>
             <li class="health">
-                <a href="#health">
+                <a href="health.html">
                 HEALTH
                 </a>
             </li>
             <li class="lifestyle">
-                <a href="#lifestyle">
+                <a href="lifestyle.html">
                 LIFESTYLE
                 </a>
             </li>
             <li class="beauty">
-                <a href= "#beauty">
+                <a href= "beauty.html">
                 BEAUTY
                 </a>
             </li>
@@ -39,25 +45,38 @@
             </li>
         </ul>
 </div>
-
-
-<form action="http://code.brittanypearl.com/mailto/send_email.php" method="post" target="form_response">
-	  <input type="hidden" name="to_email" value="brpearl20@gmail@gmail.com" />
-	  <input type="hidden" name="to_name" value="Brit" />
-	  <input type="hidden" name="to_subject" value="A Message From Your Website" />
-	  
-	  First name:<br>
-	  <input type="text" name="firstname"class= "lastname"/><br>
-	  Last name:<br>
-	  <input type="text" name="lastname" class= "lastname"/><br>
-	  Email:<br>
-	  <input type="email" name="email" class= "email"/><br>
-	  <br>
-	  <input type= "submit" name="submit" class="subscribe-btn" value="Subscribe"/> 
-</form>
-</form>
-<iframe name="form_response" style="width:0;height:0;visibility:hidden;overflow:hidden;"></iframe>
-
+<div class= "hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class= "line"></span>
 </div>
+
+<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form_response">
+      <input type="hidden" name="to_email" value="brpearl20@gmail.com" />
+      <input type="hidden" name="to_name" value="Brit" />
+      <input type="hidden" name="to_subject" value="A Message From Your Website" />
+        <div class="form"> 
+        <!-- <form action="signup.php"> -->
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" name="firstname"class= "lastname"/>
+        </div>
+        <div>
+            <label>Last name:</label>
+            <input type="text" name="lastname" class= "lastname"/>
+        </div>
+        <div>
+            <label>Message:</label>
+            <textarea type="message" name="message" class= "message"></textarea>
+        </div>
+          <input type="submit" name="submit" class="btn submit" value="Submit"/>
+        <!-- </form> -->
+        <iframe name="form_response" style="width:0;height:0;visibility:hidden;overflow:hidden;"></iframe>
+        </div>
+</form>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
